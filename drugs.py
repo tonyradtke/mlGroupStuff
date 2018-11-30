@@ -95,5 +95,5 @@ accuracy = accuracy.astype(int)
 accuracy = np.where(accuracy == 0, 1, 0)
 sum = np.sum(accuracy)
 percent = sum / test_labels.size
-print("percent accuracy", percent)
+print("percent accuracy", percent*100)
 
